@@ -1,0 +1,10 @@
+.body {
+    font-family: 'OpenSans', sans-serif;
+}
+
+.container {
+    $w: calc((100vw - 320px) / ((768 - 320) / (698 - 320)) + 320px);
+    width: clamp(320px, $w, 698px);
+    padding-left: 15px;
+    padding-right: 15px;
+}
