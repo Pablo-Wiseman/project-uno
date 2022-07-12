@@ -34,13 +34,25 @@ html {
 }
 
 .body {
+<<<<<<< HEAD
   font-family: "OpenSans", sans-serif;
+=======
+  font-family: "Open Sans", sans-serif;
+>>>>>>> main
 }
 
 .container {
   width: clamp(320px, (100vw - 320px) / 1.1851851852 + 320px, 698px);
+<<<<<<< HEAD
   padding-left: 15px;
   padding-right: 15px;
+=======
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 1px solid red;
+  overflow: hidden;
+>>>>>>> main
 }
 
 .header {
@@ -51,7 +63,11 @@ html {
   min-height: 21px;
 }
 
+<<<<<<< HEAD
 .nav__link {
+=======
+.nav {
+>>>>>>> main
   color: #fff;
 }
 
@@ -69,9 +85,14 @@ html {
 }
 .burger__line {
   display: block;
+<<<<<<< HEAD
   width: 36px;
   height: 3px;
   background-color: #fff;
+=======
+  background-color: #fff;
+  height: 3px;
+>>>>>>> main
 }
 .burger__line:nth-of-type(1) {
   width: 100%;
