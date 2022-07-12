@@ -53,6 +53,9 @@ html {
   min-width: 96px;
   min-height: 21px;
 }
+.header__btn {
+  color: #fff;
+}
 
 .nav {
   color: #fff;
