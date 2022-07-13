@@ -9,3 +9,13 @@ burgerBtn.addEventListener('click', function () {
     burgerMenu.classList.toggle('nav--active');
     scrollLock.classList.toggle('scroll-lock');
 });
+
+
+//*search field поле поиска
+
+const searchBtn = document.querySelector('.header__btn');
+const searchField = document.querySelector('.search');
+
+searchBtn.addEventListener('click', function () {
+    searchField.classList.toggle('search--active');
+});

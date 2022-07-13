@@ -21,6 +21,7 @@
     transform-origin: top left;
     transform: scale(1);
     transition: transform .6s ease-in-out;
+    z-index: 5;
   }
   &__list {
     display: flex;
@@ -28,14 +29,18 @@
     flex: 1;
   }
   &__link {
+    $fsz: calc((100vw - 320px) / ((1024 - 320) / (24 - 16)) + 16px);
     font-weight: 600;
-    font-size: 16px;
+    font-size: clamp(16px, $fsz, 24px);
     line-height: 2;
   }
   &__btn {
-    padding: 10px 32px;
+    $fsz: calc((100vw - 320px) / ((1024 - 320) / (18 - 12)) + 12px);
+    $pt: calc((100vw - 320px) / ((1024 - 320) / (22 - 10)) + 10px);
+    $ps: calc((100vw - 320px) / ((1024 - 320) / (88 - 32)) + 32px);
+    padding: clamp(10px, $pt, 22px) clamp(32px, $ps, 88px);
     font-weight: 600;
-    font-size: 12px;
+    font-size: clamp(12px, $fsz, 18px);
     line-height: 1.3;
     border: 2px solid #9d5cd0;
     border-radius: 100px;
@@ -43,10 +48,11 @@
     color: #fff;
   }
   &__icon {
+    $w: calc((100vw - 320px) / ((1024 - 320) / (13 - 9)) + 9px);
     display: inline-block;
     margin-right: 4px;
-    width: 9px;
-    height: 9px;
+    width: clamp(9px, $w, 13px);
+    height: clamp(9px, $w, 13px);
   }
 
 
