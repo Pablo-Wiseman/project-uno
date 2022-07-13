@@ -1,6 +1,20 @@
 @media (min-width: 768px) {
+    .container {
+        $w: calc((100vw - 768px) / ((1024 - 768) / (954 - 698)) + 698px);
+        width: clamp(698px, $w, 954px);
+        margin: 0 auto;
+    }
     .search {
         justify-content: flex-start;
         padding-left: 15px;
     }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        $w: calc((100vw - 1024px) / ((1920 - 1024) / (1630 - 954)) + 954px);
+        width: clamp(954px, $w, 1630px);
+        margin: 0 auto;
+    }
+    
 }
