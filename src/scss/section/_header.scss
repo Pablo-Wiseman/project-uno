@@ -1,8 +1,21 @@
 .header {
     background-color: #000;
+    &__container {
+        $p: calc((100vw - 320px) / ((768 - 320) / (30 - 12)) + 12px);
+        position: relative;
+        padding-top: clamp(12px, $p, 30px);
+        padding-bottom: clamp(12px, $p, 30px);
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        
+
+    }
     &__logo {
-        min-width: 96px;
-        min-height: 21px;
+        $w: calc((100vw - 320px) / ((768 - 320) / (187 - 96)) + 96px);
+        width: clamp(96px, $w, 187px);
+        height: auto;
     }
     &__btn {
         color: #fff;
