@@ -24,12 +24,12 @@
                 <img class="header__logo" src="icon/logo.png" alt="логотип">
                 <nav class="header__nav nav">
                     <ul class="nav__list list-reset">
-                        <li class="nav__item"><a href="" class="nav__link link-reset">О нас</a></li>
-                        <li class="nav__item"><a href="" class="nav__link link-reset">Галерея</a></li>
-                        <li class="nav__item"><a href="" class="nav__link link-reset">Каталог</a></li>
-                        <li class="nav__item"><a href="" class="nav__link link-reset">События</a></li>
-                        <li class="nav__item"><a href="" class="nav__link link-reset">Проекты</a></li>
-                        <li class="nav__item"><a href="" class="nav__link link-reset">Контакты</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link link-reset">О нас</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link link-reset">Галерея</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link link-reset">Каталог</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link link-reset">События</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link link-reset">Проекты</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link link-reset">Контакты</a></li>
                     </ul>
                     <button class="nav__btn btn-reset">
                         <svg class="nav__icon" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -38,7 +38,7 @@
                         Войти
                     </button>
                 </nav>
-                <form action="#" class="header__form search">
+                <form action="#" class="search">
                     <div class="search__content">
                         <button class="search__btn btn-reset" type="submit">
                             <svg class="search__icon" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -50,9 +50,13 @@
                     </div>
                 </form>
                 <button class="header__btn btn-reset">
-                    <svg class="header__icon" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="header__icon default" width="23" height="23" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/>
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="white"/>
+                    </svg>
+                    <svg class="header__icon2 opened" width="23" height="23" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="19.2824" height="1.92824" transform="matrix(0.707093 0.707121 -0.707093 0.707121 1.36523 0.00152588)" fill="white"/>
+                        <rect width="19.2824" height="1.92824" transform="matrix(0.707093 -0.707121 0.707093 0.707121 0 13.6365)" fill="white"/>
                     </svg>
                 </button>
             </div>
@@ -67,6 +71,17 @@
                     <li class="subheader__item"><button class="subheader__btn btn-reset"><span class="subheader__text">Авангард</span></button></li>
                     <li class="subheader__item"><button class="subheader__btn btn-reset"><span class="subheader__text">Футуризм</span></button></li>
             </ul>
+            <form action="#" class="sub-search">
+                <div class="sub-search__content">
+                    <button class="sub-search__btn btn-reset" type="submit">
+                        <svg class="sub-search__icon" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="white"/>
+                        </svg>
+                    </button>
+                    <input type="text" class="sub-search__area" name="search" placeholder="поиск по сайту">
+                </div>
+            </form>
         </div>
     </section>
 <script src="js/choices.min.js"></script>

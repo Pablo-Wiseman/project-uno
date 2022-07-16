@@ -20,5 +20,21 @@
     &__btn {
         color: #fff;
         z-index: 6;
+        .opened {
+            display: none;
+        }
+        &--active {
+            .default {
+                display: none;
+            }
+            .opened {
+                display: block;
+            }
+        }
     }
+
+    
+
+    
 }
+

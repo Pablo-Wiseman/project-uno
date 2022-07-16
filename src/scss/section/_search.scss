@@ -4,6 +4,8 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    padding-left: 15px;
+    padding-right: 50px;
     padding-bottom: clamp(20px, $pb, 35px);
     position: absolute;
     top: 0;
@@ -19,6 +21,13 @@
         transition: transform .5s ease-in-out, background-color .6s ease-in-out;
         background-color: rgba(0, 0, 0, 0.9);
 
+    }
+    &__content {
+        display: flex;
+        gap: 10px;
+    }
+    &__btn {
+        
     }
     &__area {
         $w: calc((100vw - 320px) / ((768 - 320) / (600 - 180)) + 180px);
