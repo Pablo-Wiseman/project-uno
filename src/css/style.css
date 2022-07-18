@@ -323,6 +323,7 @@ html {
   height: 296px;
   padding: 40px;
   background: rgba(0, 0, 0, 0.5);
+  overflow: auto;
 }
 .subheader__content--active {
   display: block;
