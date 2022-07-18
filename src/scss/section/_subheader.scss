@@ -12,6 +12,9 @@
     justify-content: space-between;
     gap: 96px;
   }
+  &__item {
+    position: relative;
+  }
   &__text {
     position: relative;
     font-weight: 400;
@@ -29,7 +32,17 @@
       height: 7px;
     }
   }
+
+    &__content {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      padding: 40px;
+      outline: 1px solid red;
+    }
+
 }
+
 
 .sub-search {
   &__area {

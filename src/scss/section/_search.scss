@@ -26,9 +26,8 @@
         display: flex;
         gap: 10px;
     }
-    &__btn {
         
-    }
+    
     &__area {
         $w: calc((100vw - 320px) / ((768 - 320) / (600 - 180)) + 180px);
         width: clamp(180px, $w, 600px);
@@ -38,4 +37,5 @@
         outline: none;
         color: #fff;
     }
+
 }
