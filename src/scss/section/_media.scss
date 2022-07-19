@@ -110,5 +110,15 @@
             padding-bottom: 122px;
         }
     }
+
+    .about {
+        &__inner {
+            width: 1080px;
+        }
+    }
+
+    .choices {
+        width: 400px;
+    }
     
 }
