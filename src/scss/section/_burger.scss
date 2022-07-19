@@ -6,14 +6,9 @@
     height: 18px;
     &__line {
         display: block;
-<<<<<<< HEAD
-        width: 36px;
-        height: 3px;
-        background-color: #fff;
-=======
         background-color: #fff;
         height: 3px;
->>>>>>> main
+
         &:nth-of-type(1) {
             width: 100%;
         }
@@ -24,8 +19,7 @@
             width: 50%;
         }
     }
-<<<<<<< HEAD
+
 }
-=======
-}      
->>>>>>> main
+
+
