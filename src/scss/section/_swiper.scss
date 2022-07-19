@@ -20,12 +20,14 @@
     z-index: -1;
     &-slide{
         display: flex;
-        width: 100%;  
+        width: 100%;
+        height: auto;
         
     }
     &__picture {
+        display: flex;
         width: 100%;
-        height: auto;
+        height: 100%;
     }
     &__img {
         flex: 1;
