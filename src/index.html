@@ -5,15 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blanchard</title>
+    <link rel="shortcut icon" href="icon/favicon.svg">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/choices.min.css">
+    <link rel="stylesheet"href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
+/>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="body">
+<body class="body-page">
     <header class="header">
         <div class="container header__container">
             <div class="header__inner">
-                <button class="btn-reset burger">
+                <button class="btn-reset burger" type="button">
                     <span class="burger__line"></span>
                     <span class="burger__line"></span>
                     <span class="burger__line"></span>
@@ -21,40 +25,213 @@
                 <img class="header__logo" src="icon/logo.png" alt="логотип">
                 <nav class="header__nav nav">
                     <ul class="nav__list list-reset">
-                        <li class="nav__item">
-                            <a href="" class="nav__link link-reset">
-                                О нас
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="" class="nav__link link-reset">
-                                Галерея
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="" class="nav__link link-reset">
-                                Каталог
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="" class="nav__link link-reset">
-                                События
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="" class="nav__link link-reset">
-                                Проекты
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="" class="nav__link link-reset">
-                                Контакты
-                            </a>
-                        </li>
+                        <li class="nav__item"><a href="#" class="nav__link link-reset">О нас</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link link-reset">Галерея</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link link-reset">Каталог</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link link-reset">События</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link link-reset">Проекты</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link link-reset">Контакты</a></li>
                     </ul>
+                    <button class="nav__btn btn-reset">
+                        <svg class="nav__icon" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="white"/>
+                        </svg>
+                        Войти
+                    </button>
                 </nav>
+                <form action="#" class="search">
+                    <div class="search__content">
+                        <button class="search__btn btn-reset" type="submit">
+                            <svg class="search__icon" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="white"/>
+                            </svg>
+                        </button>
+                        <input type="text" class="search__area" name="search">
+                    </div>
+                </form>
+                <button class="header__btn btn-reset">
+                    <svg class="header__icon default" width="23" height="23" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="white"/>
+                    </svg>
+                    <svg class="header__icon2 opened" width="23" height="23" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="19.2824" height="1.92824" transform="matrix(0.707093 0.707121 -0.707093 0.707121 1.36523 0.00152588)" fill="white"/>
+                        <rect width="19.2824" height="1.92824" transform="matrix(0.707093 -0.707121 0.707093 0.707121 0 13.6365)" fill="white"/>
+                    </svg>
+                </button>
             </div>
         </div>
     </header>
+    <section class="subheader">
+        <div class="subheader__container container">
+            <ul class="subheader__list list-reset">
+                    <li class="subheader__item">
+                        <button class="subheader__btn btn-reset" data-path="one">
+                            <span class="subheader__text">Реализм</span>
+                        </button>
+                        <div class="subheader__content" data-target="one" data-simplebar>
+                            <ul class="subheader__inlist list-reset">
+                                <li class="subheader__initem" style="background-image: url('/src/icon/realism-1.jpg');">
+                                    <a href="#" class="subheader__inlink link-reset">
+                                        Тинторетто
+                                    </a>
+                                </li>
+                                <li class="subheader__initem" style="background-image: url('/src/icon/realism-2.jpg');">
+                                    <a href="" class="subheader__inlink link-reset">
+                                        Фридрих
+                                    </a>
+                                </li>
+                                <li class="subheader__initem" style="background-image: url('/src/icon/realism-3.jpg');">
+                                    <a href="" class="subheader__inlink link-reset">
+                                        Леонардо
+                                    </a>
+                                </li>
+                                <li class="subheader__initem" style="background-image: url('/src/icon/realism-4.jpg');">
+                                    <a href="" class="subheader__inlink link-reset">
+                                        Верроккьо
+                                    </a>
+                                </li>
+                                <li class="subheader__initem" style="background-image: url('/src/icon/realism-4.jpg');">
+                                    <a href="" class="subheader__inlink link-reset">
+                                        Верроккьо
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="subheader__item">
+                        <button class="subheader__btn btn-reset" data-path="two">
+                            <span class="subheader__text">Импрессионизм</span>
+                        </button>
+                        <div class="subheader__content" data-target="two" data-simplebar>
+                            <ul class="subheader__inlist list-reset">
+                                <li class="subheader__initem" style="background-image: url('/src/icon/impressionism-1.jpg');">
+                                    <a href="#" class="subheader__inlink link-reset">
+                                        Моне
+                                    </a>
+                                </li>
+                                <li class="subheader__initem" style="background-image: url('/src/icon/impressionism-2.jpg');">
+                                    <a href="#" class="subheader__inlink link-reset">
+                                        Сислей
+                                    </a>
+                                </li>
+                                <li class="subheader__initem" style="background-image: url('/src/icon/impressionism-3.jpg');">
+                                    <a href="#" class="subheader__inlink link-reset">
+                                        Мане
+                                    </a>
+                                </li>
+                                <li class="subheader__initem" style="background-image: url('/src/icon/impressionism-4.jpg');">
+                                    <a href="#" class="subheader__inlink link-reset">
+                                        Ренуар
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="subheader__item">
+                        <button class="subheader__btn btn-reset" data-path="three">
+                            <span class="subheader__text">Постимпрессионизм</span>
+                        </button>
+                        <div class="subheader__content" data-target="three" data-simplebar>
+                            <ul class="subheader__inlist list-reset">
+                                <li class="subheader__initem" style="background-image: url('/src/icon/postimpress-1.jpg');">
+                                    <a href="#" class="subheader__inlink link-reset">
+                                        Ван Гог
+                                    </a>
+                                </li>
+                                <li class="subheader__initem" style="background-image: url('/src/icon/postimpress-2.jpg');">
+                                    <a href="#" class="subheader__inlink link-reset">
+                                        Сезанн
+                                    </a>
+                                </li>
+                                <li class="subheader__initem" style="background-image: url('/src/icon/postimpress-3.jpg');">
+                                    <a href="#" class="subheader__inlink link-reset">
+                                        Гоген
+                                    </a>
+                                </li>
+                                <li class="subheader__initem" style="background-image: url('/src/icon/postimpress-4.jpg');">
+                                    <a href="#" class="subheader__inlink link-reset">
+                                        Сера
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="subheader__item">
+                        <button class="subheader__btn btn-reset" data-path="four">
+                            <span class="subheader__text">Авангард</span>
+                        </button>
+                        <div class="subheader__content" data-target="four" data-simplebar>
+                            <ul class="subheader__inlist list-reset">
+                                <li class="subheader__initem" style="background-image: url('/src/icon/avangard-1.jpg');">
+                                    <a href="#" class="subheader__inlink link-reset">
+                                        Кандинский
+                                    </a>
+                                </li>
+                                <li class="subheader__initem" style="background-image: url('/src/icon/avangard-2.jpg');">
+                                    <a href="#" class="subheader__inlink link-reset">
+                                        Маринетти
+                                    </a>
+                                </li>
+                                <li class="subheader__initem" style="background-image: url('/src/icon/avangard-3.jpg');">
+                                    <a href="#" class="subheader__inlink link-reset">
+                                        Малевич
+                                    </a>
+                                </li>
+                                <li class="subheader__initem" style="background-image: url('/src/icon/avangard-4.jpg');">
+                                    <a href="#" class="subheader__inlink link-reset">
+                                        Пикассо
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="subheader__item" >
+                        <button class="subheader__btn btn-reset" data-path="five">
+                            <span class="subheader__text">Футуризм</span>
+                        </button>
+                        <div class="subheader__content" data-target="five" data-simplebar>
+                            <ul class="subheader__inlist list-reset">
+                                <li class="subheader__initem" style="background-image: url('/src/icon/future-1.jpg');">
+                                    <a href="#" class="subheader__inlink link-reset">
+                                        Карра
+                                    </a>
+                                </li>
+                                <li class="subheader__initem" style="background-image: url('/src/icon/future-2.jpg');">
+                                    <a href="#" class="subheader__inlink link-reset">
+                                        Прателла
+                                    </a>
+                                </li>
+                                <li class="subheader__initem" style="background-image: url('/src/icon/future-3.jpg');">
+                                    <a href="#" class="subheader__inlink link-reset">
+                                        Северини
+                                    </a>
+                                </li>
+                                <li class="subheader__initem" style="background-image: url('/src/icon/future-4.jpg');">
+                                    <a href="#" class="subheader__inlink link-reset">
+                                        Балла
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+            </ul>
+            <form action="#" class="sub-search">
+                <div class="sub-search__content">
+                    <button class="sub-search__btn btn-reset" type="submit">
+                        <svg class="sub-search__icon" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="white"/>
+                        </svg>
+                    </button>
+                    <input type="text" class="sub-search__area" name="search" placeholder="поиск по сайту">
+                </div>
+            </form>
+        </div>
+    </section>
+<script src="js/choices.min.js"></script>
+<script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
