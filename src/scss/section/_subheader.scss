@@ -6,11 +6,13 @@
     justify-content: space-between;
     padding-top: 23px;
     padding-bottom: 23px;
+    
   }
   &__list {
     display: flex;
     justify-content: space-between;
     gap: 96px;
+    z-index: 3;
   }
   &__item {
     position: relative;
@@ -55,6 +57,7 @@
     
     &--active {
       display: block;
+      z-index: 3;
     }
   }
 
