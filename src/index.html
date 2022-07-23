@@ -362,22 +362,55 @@
                     </div>
                     <div class="gallery__swiper">
                         <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
+                        <div class="gallery__wrapper">
                             <!-- Slides -->
-                            <div class="swiper-slide">Slide 1</div>
-                            <div class="swiper-slide">Slide 2</div>
-                            <div class="swiper-slide">Slide 3</div>
-                            ...
+                            <div class="gallery__slide">
+                                <picture>
+                                    <source media="(max-width: 420px)" srcset="img/gallery-1-320.jpg">
+                                    <source media="(max-width: 970px)" srcset="img/gallery-1-768.jpg">
+                                    <source media="(max-width: 1280px)" srcset="img/gallery-1-1024.jpg">
+                                    <img class="swiper__img" src="img/gallery-1-1920.jpg" alt="слайд">
+                                </picture>
+                            </div>
+                            <div class="gallery__slide">
+                                <picture>
+                                    <source media ="(max-width: 420px)" srcset="img/gallery-2-320.jpg">
+                                    <source media="(max-width: 970px)" srcset="img/gallery-2-768.jpg">
+                                    <source media="(max-width: 1280px)" srcset="img/gallery-2-1024.jpg">
+                                    <img class="swiper__img" src="img/gallery-2-1920.jpg" alt="слайд">
+                                </picture>
+                            </div>
+                            <div class="gallery__slide">
+                                <picture>
+                                    <source media="(max-width: 420px)" srcset="img/gallery-3-320.jpg">
+                                    <source media="(max-width: 970px)" srcset="img/gallery-3-768.jpg">
+                                    <source media="(max-width: 1280px)" srcset="img/gallery-3-1024.jpg">
+                                    <img class="swiper__img" src="img/gallery-3-1920.jpg" alt="слайд">
+                                </picture>
+                            </div>
+                            <div class="gallery__slide">
+                                <picture>
+                                    <source media="(max-width: 420px)" srcset="img/gallery-4-320.jpg">
+                                    <source media="(max-width: 970px)" srcset="img/gallery-4-768.jpg">
+                                    <source media="(max-width: 1280px)" srcset="img/gallery-4-1024.jpg">
+                                    <img class="swiper__img" src="img/gallery-4-1920.jpg" alt="слайд">
+                                </picture>
+                            </div>
+                            <div class="gallery__slide">
+                                <picture>
+                                    <source media="(max-width: 420px)" srcset="img/gallery-5-320.jpg">
+                                    <source media="(max-width: 970px)" srcset="img/gallery-5-768.jpg">
+                                    <source media="(max-width: 1280px)" srcset="img/gallery-5-1024.jpg">
+                                    <img class="swiper__img" src="img/gallery-5-1920.jpg" alt="слайд">
+                                </picture>
+                            </div>
                         </div>
                         <!-- If we need pagination -->
-                        <div class="swiper-pagination"></div>
+                        <div class="swiper-pagination1"></div>
 
                         <!-- If we need navigation buttons -->
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-
-                        <!-- If we need scrollbar -->
-                        <div class="swiper-scrollbar"></div>
+                        <div class="swiper-button-prev1"></div>
+                        <div class="swiper-button-next1"></div>
                     </div>
                 </div>
             </div>

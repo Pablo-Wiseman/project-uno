@@ -380,11 +380,6 @@ html {
   overflow: hidden;
   z-index: -1;
 }
-.swiper-slide {
-  display: flex;
-  width: 100%;
-  height: auto;
-}
 .swiper__picture {
   display: flex;
   width: 100%;
@@ -434,6 +429,23 @@ html {
   font-size: clamp(28px, (100vw - 320px) / 22.4 + 28px, 48px);
   line-height: 1.3;
   color: #fff;
+}
+.gallery__swiper {
+  width: 100%;
+  height: 367px;
+  overflow: hidden;
+}
+.gallery__wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.gallery__slide {
+  flex-shrink: 0;
+}
+.gallery__slide img {
+  width: 290px;
+  height: 367px;
 }
 
 .filter {
