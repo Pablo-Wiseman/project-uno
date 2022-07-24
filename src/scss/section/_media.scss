@@ -21,6 +21,17 @@
         }
     }
 
+    .mySwiper2 {
+        $h: calc(330px - (100vw - 768px) / ((1024 - 768) / (330 - 315)));
+        height: clamp(315px, $h, 330px);
+    }
+
+
+    .control-wrap {
+        margin-left: 0;
+        order: 2;
+    }
+
 
     
 }
@@ -49,6 +60,20 @@
             width: clamp(173px, $w, 187px);
             height: auto;
         }
+    }
+
+
+    .gallery{
+        &__choices {
+            display: inline-block;
+        }
+    }
+
+    .mySwiper2 {
+        $h: calc((100vw - 1024px) / ((1920 - 1024) / (350 - 315)) + 315px);
+        height: clamp(315px, $h, 350px);
+        width: 1150px;
+        display: inline-block;
     }
     
 }

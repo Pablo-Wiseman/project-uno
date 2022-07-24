@@ -1,38 +1,34 @@
 .mySwiper2 {
+    $h: calc(367px - (100vw - 320px) / ((768 - 320) / (367 - 330)));
     position: relative;
     width: 100%;
-    height: 417px;
-    padding-bottom: 410px;
+    height: clamp(330px, $h, 367px);
+    margin-bottom: 20px;
     z-index: 1;
 }
 
 .folder {
     width: 100%;
-    height: 367px;
 }
 
 .swiper-button-next,
 .swiper-button-prev {
     width: 30px;
     height: 30px;
-    top: 97%;
+    margin-top: 0;
+    position: static;
     border-radius: 50%;
     background-color: #666;
 }
 
-.swiper-button-next {
-    right: 82px;
-}
-
-.swiper-button-prev {
-    left: 82px;
-}
 .swiper-button-prev::after,
 .swiper-button-next::after {
     display: none;
 }
 
 .swiper-pagination {
+    position: static;
+    width: auto;
     color: #fff;
 }
 
@@ -52,5 +48,16 @@
 
     }
 }
+
+.control-wrap {
+    width: 130px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
 

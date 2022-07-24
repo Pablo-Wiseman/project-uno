@@ -542,70 +542,9 @@ html {
   line-height: 1.3;
   color: #fff;
 }
-<<<<<<< HEAD
 .gallery__choices {
   margin-bottom: 30px;
 }
-.gallery__swiper {
-  width: 100%;
-  height: 367px;
-  overflow: hidden;
-  padding-bottom: 450px;
-}
-.gallery__wrapper {
-  width: 100%;
-  height: 367px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.gallery__slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.gallery__folder {
-  max-width: 130px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.gallery__pagination {
-  color: #fff;
-  width: auto;
-  margin-left: 11px;
-  margin-right: 11px;
-}
-.gallery__prev, .gallery__next {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: #666;
-}
-=======
->>>>>>> fcd734a8c1ec85763a829fdeea9a02d0a921226d
 
 .filter {
   margin-bottom: 30px;
@@ -738,31 +677,23 @@ html {
 .mySwiper2 {
   position: relative;
   width: 100%;
-  height: 417px;
-  padding-bottom: 410px;
+  height: clamp(330px, 367px - (100vw - 320px) / 12.1081081081, 367px);
+  margin-bottom: 20px;
   z-index: 1;
 }
 
 .folder {
   width: 100%;
-  height: 367px;
 }
 
 .swiper-button-next,
 .swiper-button-prev {
   width: 30px;
   height: 30px;
-  top: 97%;
+  margin-top: 0;
+  position: static;
   border-radius: 50%;
   background-color: #666;
-}
-
-.swiper-button-next {
-  right: 82px;
-}
-
-.swiper-button-prev {
-  left: 82px;
 }
 
 .swiper-button-prev::after,
@@ -771,6 +702,8 @@ html {
 }
 
 .swiper-pagination {
+  position: static;
+  width: auto;
   color: #fff;
 }
 
@@ -785,6 +718,22 @@ html {
   height: 367px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.control-wrap {
+  width: 130px;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (min-width: 768px) {
@@ -809,6 +758,15 @@ html {
     text-align: left;
     font-weight: 700;
   }
+  .mySwiper2 {
+    height: clamp(315px, 330px - (100vw - 768px) / 17.0666666667, 330px);
+  }
+  .control-wrap {
+    margin-left: 0;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
 }
 @media (min-width: 1024px) {
   .container {
@@ -824,6 +782,14 @@ html {
   .header__logo {
     width: clamp(173px, 187px - (100vw - 1024px) / 64, 187px);
     height: auto;
+  }
+  .gallery__choices {
+    display: inline-block;
+  }
+  .mySwiper2 {
+    height: clamp(315px, (100vw - 1024px) / 25.6 + 315px, 350px);
+    width: 1150px;
+    display: inline-block;
   }
 }
 @media (min-width: 1200px) {
