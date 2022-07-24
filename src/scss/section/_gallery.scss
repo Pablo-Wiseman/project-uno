@@ -16,23 +16,7 @@
     color: #fff;
   }
   
-  &__swiper {
-    width: 100%;
-    height: 367px;
-    overflow: hidden;
-  }
-  &__wrapper {
-      width: 100%;
-      height: 100%;
-      display: flex;
-  }
-  &__slide{
-      flex-shrink: 0;
-      img{
-        width: 290px;
-        height: 367px;
-    }
-  }
+  
 
 }
 
