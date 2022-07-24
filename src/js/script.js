@@ -41,7 +41,7 @@ document.querySelectorAll(".subheader__btn").forEach(function (tabsBtn) {
 });
 
 //!swiper
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.mySwiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -60,22 +60,19 @@ const swiper = new Swiper('.swiper', {
 
 //*gallery swiper
 
-const gallerySwiper = new Swiper('.gallery__swiper', {
-  // Default parameters
+const swiper2 = new Swiper('.mySwiper2', {
   direction: 'horizontal',
-  loop: true,
   slidesPerView: 1,
-  slideClass: 'gallery__slide',
-  wrapperClass: 'gallery__wrapper',
-
-  pagination: {
-    el: '.gallery__pagination',
-    type: 'fraction',
+  spaceBetween: 10,
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
 
-  navigation: {
-    nextEl: '.gallery__next',
-    prevEl: '.gallery__prev'
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'fraction',
   },
 
   // Responsive breakpoints
@@ -95,13 +92,12 @@ const gallerySwiper = new Swiper('.gallery__swiper', {
       slidesPerView: 2,
       spaceBetween: 40
     },
-
-    1200: {
+    
+    1024: {
       slidesPerView: 3,
-      spaceBetween: 50
+      spaceBetween: 40
     }
   }
-
 
 });
 

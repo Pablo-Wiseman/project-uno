@@ -1,3 +1,7 @@
 <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<<<<<<< HEAD
 <path d="M6 11L0.999995 6L6 0.999998" stroke="white"/>
+=======
+<path d="M6.5 11L1.5 6L6.5 0.999998" stroke="white"/>
+>>>>>>> fcd734a8c1ec85763a829fdeea9a02d0a921226d
 </svg>
