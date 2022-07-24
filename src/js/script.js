@@ -62,14 +62,20 @@ const swiper = new Swiper('.swiper', {
 
 const gallerySwiper = new Swiper('.gallery__swiper', {
   // Default parameters
+  direction: 'horizontal',
   loop: true,
   slidesPerView: 1,
   slideClass: 'gallery__slide',
   wrapperClass: 'gallery__wrapper',
 
+  pagination: {
+    el: '.gallery__pagination',
+    type: 'fraction',
+  },
+
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.gallery__next',
+    prevEl: '.gallery__prev'
   },
 
   // Responsive breakpoints
