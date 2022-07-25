@@ -14,12 +14,13 @@
         &__title {
             text-align: left;
         }
-
         &__descr {
             text-align: left;
             font-weight: 700;
         }
     }
+
+
     
 }
 
@@ -112,6 +113,10 @@
         &__inner {
             width: 1080px;
         }
+    }
+
+    .choices {
+        width: 400px;
     }
     
 }
