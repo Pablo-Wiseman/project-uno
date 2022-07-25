@@ -324,11 +324,12 @@
         </section>
         <section class="gallery">
             <div class="container gallery__container">
-                    <h2 class="gallery__title title-reset">
-                        Галерея
-                    </h2>
+                    
                 <div class="gallery__inner">
                     <div class="gallery__choices">
+                        <h2 class="gallery__title title-reset">
+                            Галерея
+                        </h2>
                         <div class="gallery__filter filter">
                             <h3 class="filter__title title-reset">
                                 Фильтр:
@@ -400,7 +401,7 @@
                                 </picture>
                             </div>
                         </div>
-                        <div class="control-wrap">
+                        <div class="gallery-swiper__control">
                             <div class="swiper-button-prev gallery-swiper__prev">
                                 <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -408,7 +409,7 @@
                                 </svg>
                             </div>
                             <div class="swiper-pagination gallery-swiper__pagination"></div>
-                            <div class="swiper-button-next">
+                            <div class="swiper-button-next gallery-swiper__next">
                                 <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M0.500002 11L5.5 6L0.500002 0.999998" stroke="white" />
@@ -416,7 +417,27 @@
                             </div>
                         </div>
                     </div>
-                    
+                </div>
+                <div class="gallery-modal">
+                    <div class="gallery-modal__content">
+                        <picture class="gallery-modal__picture">
+                            <source media="(max-width: 767px)" srcset="img/modal-320.jpg">
+                            <source media="(max-width: 1200px)" srcset="img/modal-768.jpg">
+                            <img src="img/modal-1920.jpg" alt="" class="gallery-modal__img">
+                        </picture>
+                        <div class="gallery-modal__text">
+                            <h3 class="gallery-modal__title title-reset">Казимир Малевич</h3>
+                            <span class="gallery-modal__subtitle">«Женщина с граблями»</span>
+                            <span class="gallery-modal__date">1931–1932</span>
+                            <p class="gallery-modal__descr descr-reset">
+                                Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930–1931&nbsp;годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927&nbsp;году.
+                            </p>
+                            <button class="gallery-modal__btn btn-reset">
+                                <span class="gallery-modal__cross"></span>
+                                <span class="gallery-modal__cross"></span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -425,6 +446,7 @@
     <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 
 </html>

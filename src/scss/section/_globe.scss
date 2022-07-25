@@ -1,10 +1,13 @@
 .body-page {
+    position: relative;
     font-family: 'Open Sans', sans-serif;
 }
 
 .scroll-lock {
-    position: fixed;
+    position: absolute;
     width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
 }
 
 .container {
