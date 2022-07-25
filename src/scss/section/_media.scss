@@ -4,6 +4,22 @@
         width: clamp(698px, $w, 954px);
         margin: 0 auto;
     }
+    .hero {
+        &__container {
+            justify-content: start;
+        }
+        &__inner {
+            align-items: start;
+        }
+        &__title {
+            text-align: left;
+        }
+
+        &__descr {
+            text-align: left;
+            font-weight: 700;
+        }
+    }
     
 }
 
@@ -82,6 +98,19 @@
         &__list {
             $gap: calc((100vw - 1200px) / ((1920 - 1200) / (96 - 50)) + 50px);
             gap: clamp(50px, $gap, 96px);
+        }
+    }
+    .hero {
+        &__container {
+            margin-top: -75px;
+            padding-top: 133px;
+            padding-bottom: 122px;
+        }
+    }
+
+    .about {
+        &__inner {
+            width: 1080px;
         }
     }
     

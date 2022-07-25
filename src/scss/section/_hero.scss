@@ -1,0 +1,43 @@
+.hero {
+    position: relative;
+    &__container {
+        padding-top: 30px;
+        padding-bottom: 45px;
+        color: #fff;
+        z-index: 1;
+    }
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title {
+        $fsz: calc((100vw - 320px) / ((768 - 320) / (72 - 32)) + 32px);
+        font-weight: 700;
+        margin-bottom: 16px;
+        font-size: clamp(32px, $fsz, 72px);
+        line-height: 1.3;
+        color: inherit;
+        text-align: center;
+    }
+    &__descr {
+        $fsz: calc((100vw - 320px) / ((768 - 320) / (18 - 12)) + 12px);
+        font-weight: 400;
+        margin-bottom: 16px;
+        font-size: clamp(12px, $fsz, 18px);
+        line-height: 1.3;
+        color: inherit;
+        text-align: center;
+    }
+
+    &__link {
+        display: inline-block;
+        padding: 10px 15px;
+        background: #9D5CD0;
+        border-radius: 100px;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1.3;
+        color: inherit;
+    }
+}

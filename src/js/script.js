@@ -39,3 +39,46 @@ document.querySelectorAll(".subheader__btn").forEach(function (tabsBtn) {
       .classList.add("subheader__content--active");
   });
 });
+
+const swiper = new Swiper(".swiper", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+
+  autoplay: {
+    delay: 5000,
+  },
+
+  effect: "fade",
+  fadeEffect: {
+    crossFade: true,
+  },
+
+  loop: true,
+  speed: 1500,
+});
+
+// Select
+
+const element = document.querySelector(".filter__select");
+const choices = new Choices(element, {
+  placeholder: true,
+  shouldSort: false,
+  searchEnabled: false,
+});

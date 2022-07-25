@@ -1,0 +1,34 @@
+.filter {
+    &__title {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 2;
+        color: #fff;
+    }
+    &__select {
+       background-color: #000;
+    }
+}
+
+.choices {
+
+    &__inner {
+        background-color: transparent;
+        border-radius: 6px;
+    }
+    &__placeholder {
+        color: #fff;
+        opacity: 1;
+    }
+    &__list--dropdown,
+    &__list[aria-expanded]{
+        background-color: #000;
+        border-radius: 6px;
+        color: #fff;
+    }
+    &__item--selectable.is-highlighted {
+        background-color: #000;
+        border-radius: 6px;
+        color: #fff;
+    }
+}

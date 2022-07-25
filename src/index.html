@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/choices.min.css">
     <link rel="stylesheet"href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
-/>
+/>  <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="body-page">
@@ -25,7 +25,7 @@
                 <img class="header__logo" src="icon/logo.png" alt="логотип">
                 <nav class="header__nav nav">
                     <ul class="nav__list list-reset">
-                        <li class="nav__item"><a href="#" class="nav__link link-reset">О нас</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link link-reset">О нас</a></li>
                         <li class="nav__item"><a href="#" class="nav__link link-reset">Галерея</a></li>
                         <li class="nav__item"><a href="#" class="nav__link link-reset">Каталог</a></li>
                         <li class="nav__item"><a href="#" class="nav__link link-reset">События</a></li>
@@ -230,8 +230,117 @@
             </form>
         </div>
     </section>
+    <main class="main">
+        <section class="hero">
+            <div class="container hero__container">
+                <div class="hero__inner">
+                    <h1 class="hero__title title-reset">
+                        Прикоснитесь к прекрасному
+                    </h1>
+                    <p class="hero__descr descr-reset">
+                        Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки
+                        для новых предложений
+                    </p>
+                    <a href="" class="hero__link link-reset">
+                        Подписаться на рассылку
+                    </a>
+                </div>
+                <div class="swiper">
+    
+                    <div class="swiper-wrapper">
+    
+                        <!-- Slides -->
+                        <div class="swiper-slide ">
+                            <source media="(max-width: 420)" srcset="img/slide-1-320.jpg">
+                            <source media="(max-width: 970)" srcset="img/slide-1-768.jpg">
+                            <source media="(max-width: 1280)" srcset="img/slide-1-1024.jpg">
+                            <img src="img/slide-1-1920.jpg" alt="slide" class="swiper__img">
+                        </div>
+                        <div class="swiper-slide">
+                            <source media="(max-width: 420)" srcset="img/slide-2-320.jpg">
+                            <source media="(max-width: 970)" srcset="img/slide-2-768.jpg">
+                            <source media="(max-width: 1280)" srcset="img/slide-2-1024.jpg">
+                            <img src="img/slide-2-1920.jpg" alt="slide" class="swiper__img">
+                        </div>
+                        <div class="swiper-slide">
+                            <source media="(max-width: 420)" srcset="img/slide-3-320.jpg">
+                            <source media="(max-width: 970)" srcset="img/slide-3-768.jpg">
+                            <source media="(max-width: 1280)" srcset="img/slide-3-1024.jpg">
+                            <img src="img/slide-3-1920.jpg" alt="slide" class="swiper__img">
+                        </div>
+    
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="about__container container">
+                <div class="about__inner">
+                    <h2 class="about__title title-reset">О нас</h2>
+    
+                    <p class="about__descr descr-reset">
+                        Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет
+                        каждого участника как способного принимать собственные решения касаемо распределения внутренних
+                        резервов
+                        и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечёт
+                        за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает,
+                        что высокое
+                        качество позиционных исследований создаёт необходимость включения в производственный план целого
+                        ряда
+                        внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках
+                        спецификации современных стандартов, действия представителей оппозиции набирают популярность среди
+                        определённых слоёв населения, а значит, должны быть разоблачены.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="gallery">
+            <div class="container gallery__container">
+                <div class="gallery__inner">
+                    <h2 class="gallery__title title-reset">
+                        Галерея
+                    </h2>
+                    <div class="gallery__choices">
+                        <div class="gallery__filter filter">
+                            <h3 class="filter__title title-reset">
+                                Фильтр: 
+                            </h3>
+                            <select class="filter__select">
+                                <option value="">Живопись</option>
+                                <option>Рисунок</option>
+                                <option>Скульптура</option>
+                            </select>
+                        </div>
+                        <div class="gallery__check check">
+                            <label for="first" class="check__label">
+                                <input type="checkbox" id="first" class="check__box">
+                                    XIX век
+                                    <span></span>
+                                </input>
+                            </label>
+                            <label for="second" class="check__label">
+                                <input type="checkbox" id="second" class="check__box">
+                                    XX век
+                                    <span></span>
+                                </input>
+                            </label>
+                            <label for="third" class="check__label">
+                                <input type="checkbox" id="third" class="check__box">
+                                    Современность
+                                    <span></span>
+                                </input>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    </main>
 <script src="js/choices.min.js"></script>
 <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
