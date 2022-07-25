@@ -64,16 +64,22 @@
 
 
     .gallery{
+        &__inner {
+            display: flex;
+            justify-content: space-between;
+        }
         &__choices {
             display: inline-block;
         }
     }
 
+
+
     .mySwiper2 {
         $h: calc((100vw - 1024px) / ((1920 - 1024) / (350 - 315)) + 315px);
         height: clamp(315px, $h, 350px);
-        width: 1150px;
-        display: inline-block;
+        width: 594px;
+        margin-right: 0;
     }
     
 }
@@ -144,6 +150,10 @@
 
     .choices {
         width: 400px;
+    }
+
+    .mySwiper2{
+        width: 1150px;
     }
     
 }
