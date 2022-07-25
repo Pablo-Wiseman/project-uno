@@ -60,7 +60,7 @@ const swiper = new Swiper('.mySwiper', {
 
 //*gallery swiper
 
-const swiper2 = new Swiper('.mySwiper2', {
+const swiper2 = new Swiper('.gallery-swiper', {
   direction: 'horizontal',
   slidesPerView: 1,
   spaceBetween: 10,

@@ -52,7 +52,12 @@
             width: 200px;
         }
     }
-
+    .gallery {
+        &__inner {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
     
     .header {
         &__logo {
@@ -62,12 +67,6 @@
         }
     }
 
-
-    .gallery{
-        &__choices {
-            display: inline-block;
-        }
-    }
 
     .mySwiper2 {
         $h: calc((100vw - 1024px) / ((1920 - 1024) / (350 - 315)) + 315px);

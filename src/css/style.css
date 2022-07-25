@@ -674,15 +674,14 @@ html {
   opacity: 1;
 }
 
-.mySwiper2 {
+.gallery-swiper {
   position: relative;
   width: 100%;
   height: clamp(330px, 367px - (100vw - 320px) / 12.1081081081, 367px);
   margin-bottom: 20px;
   z-index: 1;
 }
-
-.folder {
+.gallery-swiper__wrapper {
   width: 100%;
 }
 
@@ -779,12 +778,17 @@ html {
   .search__area {
     width: 200px;
   }
+  .gallery__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   .header__logo {
     width: clamp(173px, 187px - (100vw - 1024px) / 64, 187px);
     height: auto;
-  }
-  .gallery__choices {
-    display: inline-block;
   }
   .mySwiper2 {
     height: clamp(315px, (100vw - 1024px) / 25.6 + 315px, 350px);

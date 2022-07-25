@@ -1,14 +1,15 @@
-.mySwiper2 {
+.gallery-swiper {
     $h: calc(367px - (100vw - 320px) / ((768 - 320) / (367 - 330)));
     position: relative;
     width: 100%;
     height: clamp(330px, $h, 367px);
     margin-bottom: 20px;
     z-index: 1;
-}
 
-.folder {
-    width: 100%;
+
+    &__wrapper {
+        width: 100%;
+    }
 }
 
 .swiper-button-next,
