@@ -41,7 +41,7 @@ document.querySelectorAll(".subheader__btn").forEach(function (tabsBtn) {
 });
 
 //!swiper
-const swiper = new Swiper('.mySwiper', {
+const swiper = new Swiper('.hero__swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
