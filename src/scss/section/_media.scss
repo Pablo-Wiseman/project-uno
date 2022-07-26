@@ -57,18 +57,21 @@
 
     &__text {
       padding: 122px 50px;
-      
     }
 
     &__date {
       margin-bottom: 41px;
     }
-    
   }
 
-
-
-
+  .catalog {
+    &__descr {
+      display: block;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 2;
+    }
+  }
 }
 
 @media (min-width: 1024px) {
@@ -84,7 +87,6 @@
       width: 200px;
     }
   }
-  
 
   .header {
     &__logo {
@@ -112,8 +114,8 @@
   }
 
   .gallery-swiper {
-    $h: calc((100vw - 1024px) / ((1920 -  1024) / (410 - 375)) + 375px);
-    $w: calc((100vw - 1024px) / ((1920 -  1024) / (1150 - 594)) + 594px);
+    $h: calc((100vw - 1024px) / ((1920 - 1024) / (410 - 375)) + 375px);
+    $w: calc((100vw - 1024px) / ((1920 - 1024) / (1150 - 594)) + 594px);
     height: clamp(375px, $h, 410px);
     width: clamp(594px, $w, 1150px);
     margin-right: 0;
@@ -124,18 +126,16 @@
   }
 
   .choices {
-    $w:calc((100vw - 1024px) / ((1920 -  1024) / (400 - 280)) + 280px);
+    $w: calc((100vw - 1024px) / ((1920 - 1024) / (400 - 280)) + 280px);
     width: clamp(280px, $w, 400px);
   }
 
-  .gallery-modal{
+  .gallery-modal {
     &__content {
       width: 594px;
       height: 594px;
     }
   }
-
-
 }
 @media (min-width: 1200px) {
   .header {
@@ -201,20 +201,18 @@
     }
   }
 
-  .gallery-modal{
+  .gallery-modal {
     &__content {
       width: 900px;
       height: 500px;
     }
 
-    .mySwiper2{
-        width: 1150px;
+    .mySwiper2 {
+      width: 1150px;
     }
-    
+
     &__img {
       height: 500px;
     }
   }
-
-  
 }
