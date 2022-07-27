@@ -108,6 +108,26 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 
+  //*catalog tabs
+  document.querySelectorAll('.accordion__content-link').forEach(function(tabsBtn){
+    tabsBtn.addEventListener('click', function(e){
+      const path = e.currentTarget.dataset.path;
+      
+      
+      document.querySelectorAll('.accordion__content-link').forEach(function(btn){
+        btn.classList.remove('accordion--active')
+      });
+      e.currentTarget.classList.add('accordion--active');
+      document.querySelectorAll('.tab__wrapper').forEach(function (tabsBtn) {
+        tabsBtn.classList.remove('tab--active');
+      });
+      
+      document.querySelector(`[data-target="${path}"]`).classList.add('tab--active');
+    });
+    
+  });
+
+
 
 
 
