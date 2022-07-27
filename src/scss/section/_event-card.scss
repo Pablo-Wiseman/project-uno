@@ -1,0 +1,70 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  &__img{
+    display: block;
+  }
+
+
+  &__text{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+    padding: 17px 35px 50px 35px;
+    border: 1px solid #CACACA;
+    border-top: none;
+  }
+
+  &__signature {
+    display: block;
+    align-self: end;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.3;
+    color: #999999;
+    &:last-of-type{
+      margin-bottom: 10px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 5px;
+    max-width: 400px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.3;
+    color: #333;
+  }
+
+  &__descr {
+    flex: 1;
+    max-width: 400px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 2;
+    color: #333;
+  }
+
+  &__link {
+    position: relative;
+    display: inline-block;
+    align-self: flex-start;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 2;
+    color: #9D5CD0;
+    &::before{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #9D5CD0;
+
+    }
+  }
+}
