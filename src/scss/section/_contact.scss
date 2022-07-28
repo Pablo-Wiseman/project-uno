@@ -1,0 +1,88 @@
+.contact {
+  &__container {
+    padding-bottom: 20px;
+  }
+  &__title {
+    $fsz: calc((100vw - 320px) / ((768 - 320) / (24 - 18)) + 18px);
+    margin-bottom: 4px;
+    font-weight: 600;
+    font-size: clamp(18px, $fsz, 24px);
+    line-height: 1.3;
+    color: #333;
+  }
+  &__descr {
+    margin-bottom: 20px;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.3;
+    color: #333;
+  }
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  &__name,
+  &__phone {
+    $h: calc((100vw - 320px) / ((768 - 320) / (50 - 40)) + 40px);
+    width: 100%;
+    max-width: 323px;
+    height: clamp(40px, $h, 50px);
+    padding: 4px 39px;
+    border: 1px solid #333333;
+    border-radius: 100px;
+    &::placeholder {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.3;
+      color: #999;
+    }
+  }
+
+  &__btn {
+    $h: calc((100vw - 320px) / ((768 - 320) / (50 - 40)) + 40px);
+    $fsz: calc((100vw - 320px) / ((768 - 320) / (18 - 12)) + 12px);
+    height: clamp(40px, $h, 50px);
+    max-width: 317px;
+    padding: 12px 35px;
+    border: 2px solid #9d5cd0;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: clamp(12px, $fsz, 18px);
+    line-height: 1.3;
+    color: #9d5cd0;
+  
+  }
+  &__hidden{
+    display: none;
+  }
+}
+
+.social {
+  &__title {
+    $fsz: calc((100vw - 320px) / ((768 - 320) / (24 - 18)) + 18px);
+    margin-bottom: 6px;
+    font-weight: 400;
+    font-size: clamp(18px, $fsz, 24px);
+    line-height: 1.3;
+  }
+  &__list {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__item {
+    width: 50px;
+    height: 50px;
+  }
+  &__link {
+    display: block;
+    width: 100%;
+    svg {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}

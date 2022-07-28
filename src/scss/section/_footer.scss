@@ -1,0 +1,32 @@
+.footer{
+  background-color: #000;
+  &__container{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  &__logo{
+    $w: calc((100vw - 320px) / ((768 - 320) / (173 - 96)) + 96px);
+    $h: calc((100vw - 320px) / ((768 - 320) / (39 - 21)) + 21px);
+    width: clamp(96px, $w, 173px);
+    height: clamp(21px, $h, 39px); 
+  }
+  &__img{
+    width: 100%;
+  }
+  &__list {
+    display: flex;
+    gap: 20px;
+  }
+  &__item{
+    width: 50px;
+    height: 50px;
+  }
+  &__link{
+    display: block;
+    width: 100%;
+  }
+}

@@ -141,12 +141,12 @@ document.addEventListener('DOMContentLoaded', () => {
     pagination: {
       el: '.event-slider__pagination',
       clickable: true,
-      type: 'bullets'
+      type: 'bullets',
     },
 
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: '.event-slider__next',
+      prevEl: '.event-slider__prev',
     },
     // using "ratio" endpoints
     breakpoints: {
@@ -156,12 +156,88 @@ document.addEventListener('DOMContentLoaded', () => {
         slidesPerGroup: 2,
       },
 
-      1170: {
+      1020: {
         slidesPerView: 3,
         spaceBetween: 27,
         slidesPerGroup: 2,
       },
-      
     },
   });
+
+  //* project swiper
+  const swiper4 = new Swiper('.partner', {
+    direction: 'horizontal',
+    spaceBetween: 10,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    clickable: true,
+
+    navigation: {
+      nextEl: '.partner__next',
+      prevEl: '.partner__prev',
+    },
+    // using "ratio" endpoints
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        slidesPerGroup: 2,
+      },
+
+      1020: {
+        slidesPerView: 2,
+        spaceBetween: 50,
+      },
+
+      1170: {
+        slidesPerView: 3,
+        spaceBetween: 50,
+        slidesPerGroup: 3,
+      },
+    },
+  });
+
+  //*tooltips
+
+  tippy('.project__tooltip', {
+    arrow: true,
+    duration: 500,
+    animation: 'scale',
+    maxWidth: 280,
+    theme: 'tooltip',
+    trigger: 'click',
+  });
+
+  //*map
+  // Функция ymaps.ready() будет вызвана, когда
+  // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+  ymaps.ready(init);
+  function init() {
+    // Создание карты.
+    var myMap = new ymaps.Map('blanchard', {
+      // Координаты центра карты.
+      // Порядок по умолчанию: «широта, долгота».
+      // Чтобы не определять координаты центра карты вручную,
+      // воспользуйтесь инструментом Определение координат.
+      center: [55.75846806898367, 37.60108849999989],
+      
+      // Уровень масштабирования. Допустимые значения:
+      // от 0 (весь мир) до 19.
+      zoom: 16,
+    });
+
+    var myPlacemark = new ymaps.Placemark(
+      [55.75846806898367, 37.60108849999989],
+      {},
+      {
+        iconLayout: "default#image",
+        iconImageHref: "icon/pointer.png",
+        iconImageSize: [50, 50],
+        iconImageOffset: [-3, -42],
+      }
+    );
+  
+    myMap.geoObjects.add(myPlacemark);
+  }
+  
 });

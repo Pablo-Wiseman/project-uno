@@ -1,0 +1,11 @@
+.map {
+  &__scene {
+    width: 100%;
+    height: 320px;
+  }
+}
+
+[class*=ground-pane] {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
