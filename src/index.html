@@ -31,22 +31,22 @@
         <nav class="header__nav nav">
           <ul class="nav__list list-reset">
             <li class="nav__item">
-              <a href="#" class="nav__link link-reset">О нас</a>
+              <a href="#about" class="nav__link link-reset"><span class="nav__link-text">О нас</span></a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link link-reset">Галерея</a>
+              <a href="#gallery" class="nav__link link-reset"><span class="nav__link-text">Галерея</span></a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link link-reset">Каталог</a>
+              <a href="#catalog" class="nav__link link-reset"><span class="nav__link-text">Каталог</span></a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link link-reset">События</a>
+              <a href="#event" class="nav__link link-reset"><span class="nav__link-text">События</span></a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link link-reset">Проекты</a>
+              <a href="#project" class="nav__link link-reset"><span class="nav__link-text">Проекты</span></a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link link-reset">Контакты</a>
+              <a href="#contact" class="nav__link link-reset"><span class="nav__link-text">Контакты</span></a>
             </li>
           </ul>
           <button class="nav__btn btn-reset">
@@ -56,7 +56,7 @@
                 d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z"
                 fill="white" />
             </svg>
-            Войти
+            <span class="nav__btn-text">Войти</span>
           </button>
         </nav>
         <form action="#" class="search">
@@ -100,6 +100,9 @@
         <li class="subheader__item">
           <button class="subheader__btn btn-reset" data-path="one">
             <span class="subheader__text">Реализм</span>
+            <svg class="subheader__text-icon" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 1L6 6L1 1" stroke="white"/>
+            </svg>
           </button>
           <div class="subheader__content" data-target="one" data-simplebar>
             <ul class="subheader__inlist list-reset">
@@ -130,6 +133,9 @@
         <li class="subheader__item">
           <button class="subheader__btn btn-reset" data-path="two">
             <span class="subheader__text">Импрессионизм</span>
+            <svg class="subheader__text-icon" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 1L6 6L1 1" stroke="white"/>
+            </svg>
           </button>
           <div class="subheader__content" data-target="two" data-simplebar>
             <ul class="subheader__inlist list-reset">
@@ -151,6 +157,9 @@
         <li class="subheader__item">
           <button class="subheader__btn btn-reset" data-path="three">
             <span class="subheader__text">Постимпрессионизм</span>
+            <svg class="subheader__text-icon" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 1L6 6L1 1" stroke="white"/>
+            </svg>
           </button>
           <div class="subheader__content" data-target="three" data-simplebar>
             <ul class="subheader__inlist list-reset">
@@ -172,6 +181,9 @@
         <li class="subheader__item">
           <button class="subheader__btn btn-reset" data-path="four">
             <span class="subheader__text">Авангард</span>
+            <svg class="subheader__text-icon" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 1L6 6L1 1" stroke="white"/>
+            </svg>
           </button>
           <div class="subheader__content" data-target="four" data-simplebar>
             <ul class="subheader__inlist list-reset">
@@ -197,6 +209,9 @@
         <li class="subheader__item">
           <button class="subheader__btn btn-reset" data-path="five">
             <span class="subheader__text">Футуризм</span>
+            <svg class="subheader__text-icon" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 1L6 6L1 1" stroke="white"/>
+            </svg>
           </button>
           <div class="subheader__content" data-target="five" data-simplebar>
             <ul class="subheader__inlist list-reset">
@@ -290,7 +305,7 @@
     <section class="about">
       <div class="container about__container">
         <div class="about__inner">
-          <h2 class="about__title title-reset">О нас</h2>
+          <h2 class="about__title title-reset" id="about">О нас</h2>
           <p class="about__descr descr-reset">
             Ясность нашей позиции очевидна: семантический разбор внешних
             противодействий однозначно определяет каждого участника
@@ -316,7 +331,7 @@
       <div class="container gallery__container">
         <div class="gallery__inner">
           <div class="gallery__choices">
-            <h2 class="gallery__title title-reset">Галерея</h2>
+            <h2 class="gallery__title title-reset" id="gallery">Галерея</h2>
             <div class="gallery__filter filter">
               <h3 class="filter__title title-reset">Фильтр:</h3>
               <select class="filter__select">
@@ -434,7 +449,7 @@
     <!-- CATALOG -->
     <section class="catalog">
       <div class="container catalog__container">
-        <h2 class="catalog__title title-reset">Каталог</h2>
+        <h2 class="catalog__title title-reset" id="catalog">Каталог</h2>
         <p class="catalog__descr descr-reset">
           Акционеры крупнейших компаний, которые представляют собой яркий
           пример континентально-европейского типа политической культуры, будут
@@ -805,7 +820,7 @@
     <!-- EVENTS -->
     <section class="event">
       <div class="event__container container">
-        <h2 class="event__title title-reset">События</h2>
+        <h2 class="event__title title-reset" id="event">События</h2>
         <div class="swiper event-slider">
           
           <div class="swiper-wrapper event-slider__wrapper">
@@ -908,7 +923,7 @@
     <section class="project">
       <div class="project__container container">
         <div class="project__top">
-          <h2 class="project__title title-reset">Проекты</h2>
+          <h2 class="project__title title-reset" id="project">Проекты</h2>
           <p class="project__descr descr-reset">
             Предварительные выводы: постоянное информационно — пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершённой неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно — пропагандистское
             <button class="project__tooltip btn-reset" data-tippy-content="Пример современных тенденций - современная методология разработки">
@@ -988,7 +1003,7 @@
     <section class="contact">
       <div class="contact__container container">
         <div class="contact__text">
-          <h3 class="contact__title title-reset">
+          <h3 class="contact__title title-reset" id="contact">
             Шоурум № 4
           </h3>
           <span class="contact__descr">

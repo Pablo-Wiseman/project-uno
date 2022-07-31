@@ -30,28 +30,47 @@
   }
 
   &__item {
+    position: relative;
     transition: color .3s ease-in-out;
     &:hover {
-      color: #C283F3;
+      color: $hover-color;
       transition: color .3s ease-in-out;
     }
     &:active {
-      color: #7943A4;
+      color: $active-color;
     }
-
     
 
   }
   &__link {
     $fsz: calc((100vw - 320px) / ((1024 - 320) / (24 - 16)) + 16px);
+    position: relative;
     font-weight: 600;
     font-size: clamp(16px, $fsz, 24px);
     line-height: 2;
+    outline: none;
+    &:focus-visible{
+      &::before{
+        content: '';
+        position: absolute;
+        top: -2px;
+        bottom: -2px;
+        left: -6px;
+        right: -6px;
+        background-color: $active-color;
+      }
+    }
+    &-text {
+      position: relative;
+      display: inline-block;
+      z-index: 2;
+    }
   }
   &__btn {
     $fsz: calc((100vw - 320px) / ((1024 - 320) / (18 - 12)) + 12px);
     $pt: calc((100vw - 320px) / ((1024 - 320) / (22 - 10)) + 10px);
     $ps: calc((100vw - 320px) / ((1024 - 320) / (88 - 32)) + 32px);
+    position: relative;
     padding: clamp(10px, $pt, 22px) clamp(32px, $ps, 88px);
     font-weight: 600;
     font-size: clamp(12px, $fsz, 18px);
@@ -60,9 +79,48 @@
     border-radius: 100px;
     text-align: center;
     color: #fff;
+    transition: color .3s ease-in-out;
+    &:hover{
+      color: $hover-color;
+      transition: color .3s ease-in-out;
+      & svg {
+        transition: fill .3s ease-in-out;
+          path {
+            fill: $hover-color;
+            transition: fill .3s ease-in-out;
+          }
+      }
+    }
+    &:active{
+      color: $active-color;
+      transition: .3s ease-in-out;
+      & svg {
+        transition: fill .3s ease-in-out;
+          path {
+          fill: $active-color;
+          transition: fill .3s ease-in-out;
+          }
+      }
+    }
+    &:focus-visible{
+      &::before{
+        content: '';
+        position: absolute;
+        top: -2px;
+        bottom: -2px;
+        left: -6px;
+        right: -6px;
+        background-color: $active-color;
+      }
+    }
+    
+    &-text {
+      position: relative;
+    }
   }
   &__icon {
     $w: calc((100vw - 320px) / ((1024 - 320) / (13 - 9)) + 9px);
+    position: relative;
     display: inline-block;
     margin-right: 4px;
     width: clamp(9px, $w, 13px);
