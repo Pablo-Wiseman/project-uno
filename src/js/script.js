@@ -43,6 +43,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  
+
   //!hero swiper
   const swiper1 = new Swiper('.hero-swiper', {
     // Optional parameters

@@ -15,7 +15,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   //? remove page scroll-lock class and hide modal window
   btnClose.addEventListener('click', () => {
-    document.body.classList.remove('scroll-lock');
+    body.classList.remove('scroll-lock');
     modalGallery.classList.remove('gallery-modal--active');
   });
+
+
+
 });
