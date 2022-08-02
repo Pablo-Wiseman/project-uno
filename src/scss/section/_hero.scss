@@ -44,10 +44,31 @@
     $ps: calc((100vw - 320px) / ((768 - 320) / (35 - 15)) + 15px);
     display: inline-block;
     padding: clamp(10px, $pt, 22px) clamp(15px, $ps, 35px);
-    background: #9d5cd0;
+    background-color: #9d5cd0;
+    border: 3px solid transparent;
     border-radius: 100px;
     font-weight: 700;
     font-size: clamp(12px, $fsz, 18px);
     line-height: 1.3;
+    transition: border .3s ease-in-out;
+    
+    &:hover {
+      border: 3px solid #D1A9F0;
+      transition: border .3s ease-in-out;
+    }
+    &:active {
+      background-color: #7943A4;
+      
+    }
+    &:focus:not(:active) {
+      border-color: transparent;
+      outline: 2px solid #C283F3;
+      outline-offset: 3px;
+    }
+    &:focus-visible {
+      border-color: transparent;
+      outline: 2px solid #C283F3;
+      outline-offset: 3px;
+    }
   }
 }
